@@ -1,0 +1,29 @@
+package array;
+import java.util.Scanner;
+public class Smallest {
+
+	public static void main(String[] args) {
+	
+		Smallest();
+	}
+	static void Smallest() {
+		int value;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the  array element:");
+		value=sc.nextInt();
+		int arr1[] = new int[value];
+		
+		
+		for(int i=0; i<value; i++) {
+			arr1[i]=sc.nextInt();
+			
+			
+		}
+		for(int i=0; i<value; i++) {
+			System.out.println(arr1[i] + "");
+			
+		
+	  }
+	}
+
+}

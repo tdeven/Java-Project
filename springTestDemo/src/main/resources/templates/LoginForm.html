@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>login</title>
+</head>
+<body>
+
+  <h1> Login Form</h1>
+  <hr>
+  
+  <form action="/login" method="post">
+  
+  <p style="color:red"> [[${message}]] </p>
+  
+  FirstName <input type="text" name="fname"> <br> <br>
+  LastName  <input type="text" name="lname"> <br> <br>    
+  UserName  <input type="text" name="username"> <br> <br>
+  Password  <input type="text" name="password"> <br> <br>
+  
+  
+  EmailId   <input type="text" name="email"><br><br>
+  
+  Specialization <input type="text" name="specialization"><br><br>
+  
+  Address <input type="text" name="address"><br><br>
+  
+  Mobile no. <input type="text" name="mobile"><br><br>
+  
+  Note <input type="text" name="note"><br><br>
+  
+  Gender <input type="radio" name="gender"> Male
+         <input type="radio" name="gender"> Female
+         <br> <br>
+  
+  Hobbies <input type="radio" name="sports"> Sports
+          <input type="radio" name="singing"> Singing
+          <input type="radio" name="dancing"> Dancing
+          <input type="radio" name="reading"> Reading
+          <input type="radio" name="swimming"> Swimming
+          <input type="radio" name="skipping"> Skipping
+          
+          <br><br>
+          
+          
+   DOB <input type="date" name="dob"> 
+   
+       <br><br>
+      
+   States <select name="state">
+   
+      <option value=""> Select state </option>
+       <option value="state-1">state-1 </option>
+        <option value="state-2">state-2 </option>
+         <option value="state-3">state-3</option>
+          <option value="state-4">state-4</option>
+           <option value="state-5">state-5 </option>
+            <option value="state-6">state-6 </option>
+             <option value="state-7">state-7 </option>
+   
+   </select><br><br>
+   
+   Photo <input type="file" name="Choose"> <br><br>
+                   
+      <input type="submit" value="Signup">
+  
+        <input type="submit" value="Create"> 
+  </form>
+  
+  
+
+</body>
+</html>

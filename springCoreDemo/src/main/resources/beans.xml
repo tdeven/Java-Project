@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+   <bean class="com.di.Student" id="stud">
+   
+     <constructor-arg value="5566"/>
+     <constructor-arg value="Hari"/>
+     <constructor-arg value="Shrestha"/>
+     <constructor-arg value="880"/>
+          
+    </bean>
+    
+    <bean class="com.di.Bike" id="bk">
+         
+         <property name="color" value="Red"/>
+         <property name="price" value="500000"/>
+         <property name="company" value="Honda"/>
+         <property name="cc" value="300"/>
+     </bean>
+     
+     <bean class="com.di.Customer" id="cust">
+     
+        <property name="id" value="123"/>
+        <property name="name" value="Narayan lama"/>
+        <property name="age" value="24"/>
+        <property name="city" value="Pokhara"/>
+        <property name="bike" ref="bk"/>
+     </bean>
+
+</beans>

@@ -1,0 +1,25 @@
+package array;
+import java.util.Scanner;
+public class Smallest {
+
+	public static void main(String[] args) {
+	
+		System.out.println("Smallest=" +getSmallest(4,5));
+	}
+	static int getSmallest(int a, int value) {
+		int temp;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the  array element:");
+		value=sc.nextInt();
+		int arr[] = new int[value];
+		for(int i=0; i<value; i++) {
+			for (int j=i+1; j<value; j++) {
+				temp=arr[i];
+				arr[i]=arr[j];
+				arr[j]=temp;
+			}
+			
+		}
+		return arr[0];
+	}
+}

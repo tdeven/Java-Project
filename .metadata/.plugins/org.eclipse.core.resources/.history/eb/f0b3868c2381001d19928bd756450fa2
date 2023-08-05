@@ -1,0 +1,73 @@
+package array;
+
+public class ArrayWithMethod {
+
+	/*
+	 * =========== Array With Method==========
+	 * 1> array as arguement:
+	 * 
+	 *    void sum(int a[]);
+	 *    {
+	 *    }
+	 *    sum(array);
+	 *    
+	 * 2>array as return data type:
+	 * int[] getData(){
+	 * return array;
+	 * }
+	 * 
+	 *   
+	 *
+	 * 
+	 */
+	public static void main(String[] args) {
+		
+      int data[] = {36,21,23,12,25,52};
+      
+      sum(data);
+      
+		int Dc[] = {12,12,12};
+		PrintArray(Dc);
+		
+	
+		//Derivate(d);
+		
+		String Name[] = { " Nepal", "India", "China","Korea","USA"};
+	    Country(Name);
+	}
+	
+	
+ static void sum(int values[]) {
+	int s=0; 
+	for(int x: values) {
+		s=s+x;
+	}
+	System.out.println("total=" +s);
+   }
+ 
+   static void PrintArray(int array[]) {
+	   int tot=0;
+	   for(int m:array) {
+		   tot=tot+m;
+		   
+	   }
+	   System.out.println("Master=" +tot);
+   }
+   
+   static void Derivate(int Lala[]) {
+	  
+	   for(int d:Lala) {
+		   
+	  
+	   System.out.println(d);
+     }
+   }
+   
+  // Country name:
+   static void Country(String Option[]) {
+	   
+	   for(String n: Option ) {
+		   System.out.println(n);
+	   }
+   }
+}
